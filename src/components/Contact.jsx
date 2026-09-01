@@ -65,13 +65,13 @@ const Contact = () => {
               </div>
             </a>
 
-            <div className="contact-card">
+            <a href="tel:0763500658" className="contact-card">
               <Phone className="contact-icon text-accent" size={28} />
               <div className="contact-details">
                 <h3 className="contact-method">Phone</h3>
                 <p className="contact-detail">0763500658</p>
               </div>
-            </div>
+            </a>
 
             <div className="contact-card">
               <MapPin className="contact-icon text-accent" size={28} />

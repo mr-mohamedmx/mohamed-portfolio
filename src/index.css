@@ -96,5 +96,29 @@ section {
 }
 
 .btn-primary:hover {
-  background-color: rgba(13, 148, 136, 0.1);
+  background-color: rgba(217, 119, 6, 0.1);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--surface-color);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+
+.back-to-top:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  transform: translateY(-4px);
 }

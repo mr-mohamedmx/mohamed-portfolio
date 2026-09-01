@@ -8,6 +8,21 @@ const Projects = () => {
 
   const projectsList = [
     {
+      title: 'Smart Attendance Management System',
+      date: 'In Development',
+      description: 'Full-stack application designed to automate student/employee attendance tracking, feature role-based access control, and generate real-time analytical reports.',
+      tech: ['React.js', 'Node.js', 'Express.js', 'MySQL / PostgreSQL'],
+      github: '#',
+      external: '',
+      features: [
+        'Automated attendance logging with instant status updates.',
+        'Role-based dashboards tailored for Administrators, Managers, and Users.',
+        'RESTful API backend for seamless data exchange and authentication.',
+        'Exportable monthly and weekly attendance analytics & reports.',
+        'Relational database architecture for reliable and optimized record storage.'
+      ]
+    },
+    {
       title: 'Sport Vault — Sports Equipment E-commerce',
       date: '04/2026 – 07/2026',
       description: 'Full-stack web application featuring user authentication, product management, payment processing, and a comprehensive admin dashboard.',
