@@ -1,0 +1,124 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: var(--nav-height);
+}
+
+.hero-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-image-container {
+  flex-shrink: 0;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--surface-color);
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.hero-image-container:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: var(--surface-hover); /* Placeholder background */
+}
+
+.hero-greeting {
+  font-family: var(--font-mono);
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.hero-name {
+  font-size: clamp(40px, 8vw, 80px);
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  font-size: clamp(30px, 6vw, 60px);
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  min-height: clamp(36px, 7.2vw, 72px); /* Prevents layout shift when typing */
+}
+
+.cursor {
+  display: inline-block;
+  color: var(--accent-color);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.hero-description {
+  color: var(--text-secondary);
+  max-width: 540px;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .hero-content-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .hero-image-container {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
